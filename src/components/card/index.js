@@ -1,4 +1,5 @@
 import React, { useState, useContext, createContext } from "react";
+import { Player } from "../";
 
 import {
   Container,
@@ -62,22 +63,29 @@ Card.Feature = function CardFeature({ children, category, ...restProps }) {
     FeatureContext
   );
   return showFeature ? (
-    <Feature src={itemFeature.img_url} {...restProps}>
+    <Feature src={itemFeature.image_url} {...restProps}>
       <Content>
         <FeatureTitle>{itemFeature.title}</FeatureTitle>
         <FeatureText>{itemFeature.description}</FeatureText>
         <FeatureClose onClick={() => setShowFeature(false)}>
           <img src="/images/icons/close.png" alt="close" />
         </FeatureClose>
-      </Content>
 
-      <Group margin="30px 0" flexDirection="row" alignItem="center">
-        <Skill difficulty={itemFeature.skill}>{itemFeature.skill}</Skill>
-        <FeatureText fontWeight="bold">
-          {itemFeature.genre.charAt(0).toUpperCase() +
-            itemFeature.genre.slice(1)}
-        </FeatureText>
-      </Group>
+        <Group margin="30px 0" flexDirection="row" alignItem="center">
+          <Skill difficulty={itemFeature.skill}>
+            {itemFeature.skill.charAt(0).toUpperCase() +
+              itemFeature.skill.slice(1)}
+          </Skill>
+          <FeatureText fontWeight="bold">
+            {itemFeature.genre.charAt(0).toUpperCase() +
+              itemFeature.genre.slice(1)}
+          </FeatureText>
+        </Group>
+        <Player>
+          <Player.Button />
+          <Player.Video src={itemFeature.video_url} />
+        </Player>
+      </Content>
     </Feature>
   ) : null;
 };

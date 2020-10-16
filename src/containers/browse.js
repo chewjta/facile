@@ -1,7 +1,8 @@
 import React, { useState, useContext, useEffect } from "react";
 import { SelectProfileContainer } from "./profiles";
+import { FooterContainer } from "./footer";
 import { FirebaseContext } from "../context/firebase";
-import { Card, Header, Loading } from "../components";
+import { Card, Header, Loading, Player } from "../components";
 import * as ROUTES from "../constants/routes";
 import logo from "../logo.png";
 
@@ -29,7 +30,7 @@ export function BrowseContainer({ slides }) {
   return profile.displayName ? (
     <>
       {loading ? <Loading src={user.photoURL} /> : <Loading.ReleaseBody />}
-      <Header src="barrys" dontShowOnSmallViewPort>
+      <Header src="spinning" dontShowOnSmallViewPort>
         <Header.Frame>
           <Header.Group>
             <Header.Logo to={ROUTES.HOME} alt="codefix" src={logo} />
@@ -99,12 +100,11 @@ export function BrowseContainer({ slides }) {
                 </Card.Item>
               ))}
             </Card.Entities>
-            <Card.Feature category={category}>
-              <p>Hello</p>
-            </Card.Feature>
+            <Card.Feature category={category}></Card.Feature>
           </Card>
         ))}
       </Card.Group>
+      <FooterContainer />
     </>
   ) : (
     <SelectProfileContainer user={user} setProfile={setProfile} />
