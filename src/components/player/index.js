@@ -20,13 +20,13 @@ Player.Video = function PlayerVideo({ src, ...restProps }) {
   const { showPlayer, setShowPlayer } = useContext(PlayerContext);
   return showPlayer
     ? ReactDOM.createPortal(
-        <Overlay onClick={() => setShowPlayer(false)}>
+        <Overlay onClick={() => setShowPlayer(false)} data-testid="player">
           <Inner>
             <iframe
               src={src}
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
           </Inner>
         </Overlay>,
