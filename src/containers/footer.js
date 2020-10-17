@@ -37,7 +37,7 @@ export function FooterContainer() {
         </Footer.Column>
       </Footer.Row>
       <Footer.Break />
-      <Footer.Text>Codeflix Singapore</Footer.Text>
+      <Footer.Text>Facile Singapore</Footer.Text>
     </Footer>
   );
 }

@@ -81,10 +81,21 @@ Card.Feature = function CardFeature({ children, category, ...restProps }) {
               itemFeature.genre.slice(1)}
           </FeatureText>
         </Group>
-        <Player>
-          <Player.Button />
-          <Player.Video src={itemFeature.video_url} />
-        </Player>
+        <Group flexFlow="row wrap" maxWidth="500px">
+          {itemFeature.video_url ? (
+            itemFeature.video_url.map((item, index) => (
+              <Player>
+                <Player.Button name={`Episode ${index + 1}`} />
+                <Player.Video src={item} />
+              </Player>
+            ))
+          ) : (
+            <Player>
+              <Player.Button name="Play" />
+              <Player.Video src={itemFeature.video_url} />
+            </Player>
+          )}
+        </Group>
       </Content>
     </Feature>
   ) : null;

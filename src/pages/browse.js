@@ -9,7 +9,5 @@ export default function Browse() {
 
   const slides = selectionFilter({ coding, fitness });
 
-  console.log(slides);
-
   return <BrowseContainer slides={slides} />;
 }

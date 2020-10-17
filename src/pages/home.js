@@ -4,6 +4,8 @@ import { FooterContainer } from "../containers/footer";
 import { FaqsContainer } from "../containers/faqs";
 import { HeaderContainer } from "../containers/header";
 import { Feature, OptForm } from "../components";
+import { Link } from "react-router-dom";
+import * as ROUTES from "../constants/routes";
 
 export default function Home() {
   return (
@@ -11,18 +13,16 @@ export default function Home() {
       <HeaderContainer>
         <Feature>
           <Feature.Title>
-            Unlimited films, TV programmes and more.
+            Unlimited workouts, coding tutorials and more.
           </Feature.Title>
-          <Feature.SubTitle>
-            Watch anywhere. Cancel at any time.
-          </Feature.SubTitle>
+          <Feature.SubTitle>One price. At your fingertips.</Feature.SubTitle>
           <OptForm>
-            <OptForm.Input placeholder="Email address" />
-            <OptForm.Button>Try it now</OptForm.Button>
+            <OptForm.Button>
+              <Link to={ROUTES.SIGN_UP}>I am Ready</Link>
+            </OptForm.Button>
             <OptForm.Break />
             <OptForm.Text>
-              Ready to watch? Enter your email to create or restart your
-              membership.
+              Ready to start? Click to begin the grind.
             </OptForm.Text>
           </OptForm>
         </Feature>

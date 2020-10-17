@@ -3,7 +3,7 @@ import Fuse from "fuse.js";
 import { SelectProfileContainer } from "./profiles";
 import { FooterContainer } from "./footer";
 import { FirebaseContext } from "../context/firebase";
-import { Card, Header, Loading } from "../components";
+import { Card, Header, Loading, Player } from "../components";
 import * as ROUTES from "../constants/routes";
 import logo from "../logo.png";
 
@@ -96,7 +96,10 @@ export function BrowseContainer({ slides }) {
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </Header.Text>
-          <Header.PlayButton>Play</Header.PlayButton>
+          <Player>
+            <Player.PreviewButton name="Play" />
+            <Player.Video src="https://www.youtube.com/embed/RDV3Z1KCBvo?autoplay=1" />
+          </Player>
         </Header.Feature>
       </Header>
 

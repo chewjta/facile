@@ -59,7 +59,7 @@ export const Close = styled.button`
 
 export const Button = styled.button`
   background-color: #169aee;
-  border-color: #ff0a16;
+  border-color: white;
   width: 115px;
   height: 45px;
   text-transform: uppercase;
@@ -72,8 +72,29 @@ export const Button = styled.button`
   align-items: center;
   justify-content: center;
   padding-left: 0;
+  margin: 0 10px 10px 0;
+  flex-basis: 0;
   &:hover {
     transform: scale(1.05);
     background-color: #739fef;
+  }
+`;
+
+export const PreviewButton = styled.button`
+  box-shadow: 0 0.6vw 1vw -0.4vw rgba(0, 0, 0, 0.35);
+  background-color: #e6e6e6;
+  color: #000;
+  border-width: 0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  max-width: 130px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  &:hover {
+    background-color: #169aee;
+    color: white;
   }
 `;

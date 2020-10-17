@@ -24,7 +24,7 @@ export const Inner = styled.div`
 
 export const Pane = styled.div`
   width: 50%;
-
+  margin-right: 30px;
   @media (max-width: 1000px) {
     width: 100%;
     padding: 0 45px;
@@ -54,7 +54,7 @@ export const SubTitle = styled.h2`
 
 export const Image = styled.img`
   max-width: 90%;
-  height: auto;
+  max-height: 330px;
 `;
 
 export const Container = styled.div`

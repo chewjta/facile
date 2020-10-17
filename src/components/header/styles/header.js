@@ -5,7 +5,7 @@ export const Background = styled.div`
   display: flex;
   flex-direction: column;
   background: url(${({ src }) =>
-      src ? `../images/misc/${src}.jpg` : "../images/misc/home-bg.jpg"})
+      src ? `../images/misc/${src}.jpg` : "../images/misc/barrys.jpg"})
     top left / cover no-repeat;
   @media (max-width: 1100px) {
     ${({ dontShowOnSmallViewPort }) =>
@@ -170,10 +170,11 @@ export const ButtonLink = styled(ReactRouterLink)`
   background-color: #169aee;
   width: 84px;
   height: fit-content;
-  color: black;
+  color: white;
   border: 0;
   font-size: 15px;
   border-radius: 3px;
+  font-weight: bold;
   padding: 8px 17px;
   cursor: pointer;
   text-decoration: none;

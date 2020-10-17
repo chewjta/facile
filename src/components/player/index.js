@@ -2,7 +2,13 @@ import React, { useState, useContext, createContext } from "react";
 
 import ReactDOM from "react-dom";
 
-import { Container, Button, Overlay, Inner } from "./styles/player";
+import {
+  Container,
+  Button,
+  Overlay,
+  Inner,
+  PreviewButton,
+} from "./styles/player";
 
 export const PlayerContext = createContext();
 
@@ -40,7 +46,17 @@ Player.Button = function PlayerButton({ ...restProps }) {
 
   return (
     <Button onClick={() => setShowPlayer((showPlayer) => !showPlayer)}>
-      Play
+      {restProps.name}
     </Button>
+  );
+};
+
+Player.PreviewButton = function PlayerPreviewButton({ ...restProps }) {
+  const { showPlayer, setShowPlayer } = useContext(PlayerContext);
+
+  return (
+    <PreviewButton onClick={() => setShowPlayer((showPlayer) => !showPlayer)}>
+      {restProps.name}
+    </PreviewButton>
   );
 };
