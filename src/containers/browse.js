@@ -31,7 +31,7 @@ export function BrowseContainer({ slides }) {
   useEffect(() => {
     const fuse = new Fuse(slideRows, {
       keys: ["data.description", "data.title", "data.genre"],
-      threshold: 0.2,
+      threshold: 0.1,
     });
     const results = fuse.search(searchTerm).map(({ item }) => item);
 
@@ -88,17 +88,14 @@ export function BrowseContainer({ slides }) {
             Begin Your Zumba Journey Now
           </Header.FeatureCallOut>
           <Header.Text>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            Work like you don’t need the money. Love like you’ve never been
+            hurt. Dance like nobody’s watching. When you dance, you can enjoy
+            the luxury of being you. Get up and dance, get up and smile, get up
+            and drink to the days that are gone in the shortest while.
           </Header.Text>
           <Player>
             <Player.PreviewButton name="Play" />
-            <Player.Video src="https://www.youtube.com/embed/RDV3Z1KCBvo?autoplay=1" />
+            <Player.Video src="https://www.youtube.com/embed/xZs6nCUQuuM?start=66&autoplay=1&showinfo=0&controls=0" />
           </Player>
         </Header.Feature>
       </Header>

@@ -10,8 +10,8 @@
     },
     {
       "id": 2,
-      "title": "Download your programmes to watch on the go.",
-      "subTitle": "Save your data and watch all your favourites offline.",
+      "title": "Watch on the go without downloading.",
+      "subTitle": "PWA compatible, watch without any additional downloads",
       "image": "/images/misc/fitness-app.jpg",
       "alt": "Fitness on Mobile",
       "direction": "row-reverse"
