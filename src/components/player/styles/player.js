@@ -19,10 +19,16 @@ export const Inner = styled.div`
   position: relative;
   width: 100%;
   max-width: 900px;
+  overflow: hidden;
+  padding-top: 56.25%;
   margin: auto;
   iframe {
-    height: 560px;
-    width: 800px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
   }
 `;
 

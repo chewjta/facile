@@ -85,7 +85,7 @@ Card.Feature = function CardFeature({ children, category, ...restProps }) {
           {itemFeature.video_url ? (
             itemFeature.video_url.map((item, index) => (
               <Player>
-                <Player.Button name={`Episode ${index + 1}`} />
+                <Player.Button name={` Episode ${index + 1}`} />
                 <Player.Video src={item} />
               </Player>
             ))

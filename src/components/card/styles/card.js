@@ -147,6 +147,11 @@ export const Content = styled.div`
 export const Entities = styled.div`
   display: flex;
   flex-direction: row;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  ::-webkit-scrollbar {
+    display: none;
+  }
 `;
 
 export const Item = styled.div`
@@ -157,7 +162,7 @@ export const Item = styled.div`
   cursor: pointer;
   transition: transform 0.2s;
   &:hover {
-    transform: scale(1.3);
+    transform: scale(1.08);
     z-index: 99;
   }
   @media (min-width: 1200px) {
@@ -184,6 +189,7 @@ export const Image = styled.img`
   border: 0;
   width: 100%;
   max-width: 305px;
+  min-width: 305px;
   cursor: pointer;
   height: auto;
   padding: 0;
