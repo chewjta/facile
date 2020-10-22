@@ -43,6 +43,22 @@ People who want to learn a new skill and want a simple platform to do so! Binge-
 
 ---
 
+### Features
+
+1. User sign up/ sign in (Auth)
+2. Select user profile (Mimicking Netflix)
+3. Select category tab (Fitness/Coding for now).
+4. Live search using Fuse.js
+5. Video overlay using ReactPortal
+6. Multiple episodes per video series.
+7. Scrolling container when searching for videos similar to Netflix. 
+
+#### App Demo:
+
+![auth](wireframes/home_page.gif)
+![demo](wireframes/interface.gif)
+
+
 ### Approach
 
 Step 1: Creating wireframes to visualize which components are needed/ how the layout/interface of the app looks like:
@@ -74,6 +90,12 @@ Step 3: Begin coding
 ##### Firebase
 
 1. Firebase for authentication and firestore for storing backend data & information
+
+##### Misc.
+
+1. Fuse.js
+2. Styled-components
+3. jest/ inbuilt react testing library for a few small tests
 
 ---
 
