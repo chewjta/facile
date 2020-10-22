@@ -3,10 +3,10 @@
 ## Content Page
   * [Description](#description)
   * [Inspiration](#inspiration)
-  * [Initialization](#initialization)
+  * [Approach](#approach)
   * [Features](#features)
   * [Technologies](#technologies)
-  * [Approach](#approach)
+
 
 
 ### Description
@@ -43,21 +43,6 @@ People who want to learn a new skill and want a simple platform to do so! Binge-
 
 ---
 
-### Technologies
-
-##### ReactJS
-
-1. React Routers for accessing different pages, i.e. signin/signout page, home page, browse page. 
-2. React Hooks
-3. ReactPortal for video player overlay.
-4. styled components + compound components for reusable components/ styling. 
-
-##### Firebase
-
-1. Firebase for authentication and firestore for storing backend data & information
-
----
-
 ### Approach
 
 Step 1: Creating wireframes to visualize which components are needed/ how the layout/interface of the app looks like:
@@ -72,6 +57,25 @@ Step 2: Planning out folder structures, listing out components required and basi
 <img src="./wireframes/components.png" alt="components" width="300"/>
 <img src="./wireframes/individual_coponent.png" alt="individual component" width="300"/>
 <img src="./wireframes/architecture.png" alt="architecture" width="300"/>
+
+Step 3: Begin coding 
+
+---
+
+### Technologies
+
+##### ReactJS
+
+1. React Routers for accessing different pages, i.e. signin/signout page, home page, browse page. 
+2. React Hooks
+3. ReactPortal for video player overlay.
+4. styled components + compound components for reusable components/ styling. 
+
+##### Firebase
+
+1. Firebase for authentication and firestore for storing backend data & information
+
+---
 
 
 
