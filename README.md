@@ -56,6 +56,7 @@ People who want to learn a new skill and want a simple platform to do so! Binge-
 #### App Demo:
 
 ![auth](wireframes/home_page.gif)
+
 ![demo](wireframes/interface.gif)
 
 
