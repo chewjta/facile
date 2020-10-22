@@ -2,8 +2,8 @@
 
 ## Content Page
   * [Description](#description)
-  * [Motivation](#motivation)
   * [Features](#features)
+  * [Motivation](#motivation)
   * [Approach](#approach)
   * [Technologies](#technologies)
 
@@ -15,6 +15,24 @@ Definition of Facile - Achieving something with ease/effortlessly
 
 Facile is subscription based streaming platform for follow-along fitness workouts and coding tutorials.
 
+
+---
+
+### Features
+
+1. User sign up/ sign in (Auth)
+2. Select user profile (Mimicking Netflix)
+3. Select category tab (Fitness/Coding for now).
+4. Live search using Fuse.js
+5. Video overlay using ReactPortal
+6. Multiple episodes per video series.
+7. Scrolling container when searching for videos similar to Netflix. 
+
+#### App Demo:
+
+![auth](wireframes/home_page.gif)
+
+![demo](wireframes/interface.gif)
 
 ---
 
@@ -42,23 +60,6 @@ People who prefer working out in their own private zones but are afraid/ do not 
 People who want to learn a new skill and want a simple platform to do so! Binge-watching is sure a good way to start!
 
 ---
-
-### Features
-
-1. User sign up/ sign in (Auth)
-2. Select user profile (Mimicking Netflix)
-3. Select category tab (Fitness/Coding for now).
-4. Live search using Fuse.js
-5. Video overlay using ReactPortal
-6. Multiple episodes per video series.
-7. Scrolling container when searching for videos similar to Netflix. 
-
-#### App Demo:
-
-![auth](wireframes/home_page.gif)
-
-![demo](wireframes/interface.gif)
-
 
 ### Approach
 
