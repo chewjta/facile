@@ -60,9 +60,18 @@ People who want to learn a new skill and want a simple platform to do so! Binge-
 
 ### Approach
 
-Step 1: Creating wireframes to visualize which components are needed/ how the layout/interface of the app looks like. 
-<img src="wireframes/wireframe_home.png" alt="wireframe homepage" width="300"/>
+Step 1: Creating wireframes to visualize which components are needed/ how the layout/interface of the app looks like:
+
+<img src="./wireframes/wireframe_home.png" alt="wireframe homepage" width="300"/>
 <img src="./wireframes/wireframe_log.png" alt="wireframe signin/up" width="300"/>
 <img src="./wireframes/wireframe_browse.png" alt="wireframe browse" width="300"/>
 
-Step 2: 
+Step 2: Planning out folder structures, listing out components required and basic overall architecture overview:
+
+<img src="./wireframes/folder_layout.png" alt="folder layout" width="300"/>
+<img src="./wireframes/components.png" alt="components" width="300"/>
+<img src="./wireframes/indivudal_coponent.png" alt="individual component" width="300"/>
+<img src="./wireframes/architecture.png" alt="architecture" width="300"/>
+
+
+
