@@ -70,7 +70,7 @@ Step 2: Planning out folder structures, listing out components required and basi
 
 <img src="./wireframes/folder_layout.png" alt="folder layout" width="300"/>
 <img src="./wireframes/components.png" alt="components" width="300"/>
-<img src="./wireframes/indivudal_coponent.png" alt="individual component" width="300"/>
+<img src="./wireframes/individual_coponent.png" alt="individual component" width="300"/>
 <img src="./wireframes/architecture.png" alt="architecture" width="300"/>
 
 
