@@ -2,9 +2,9 @@
 
 ## Content Page
   * [Description](#description)
-  * [Inspiration](#inspiration)
-  * [Approach](#approach)
+  * [Motivation](#motivation)
   * [Features](#features)
+  * [Approach](#approach)
   * [Technologies](#technologies)
 
 
@@ -18,7 +18,7 @@ Facile is subscription based streaming platform for follow-along fitness workout
 
 ---
 
-### Inspiration
+### Motivation
 
 ##### Before enrolling in General Assembly, I used to self learn coding via tutorials on Udemy. 
 
