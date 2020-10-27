@@ -13,7 +13,7 @@
 
 Definition of Facile - Achieving something with ease/effortlessly
 
-Facile is subscription based streaming platform for follow-along fitness workouts and coding tutorials.
+Facile is a subscription based streaming platform for follow-along fitness workouts and coding tutorials.
 
 Visit [Facile](https://facile-20ad5.web.app/) to find out more!
 
